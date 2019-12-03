@@ -8,7 +8,7 @@
     {% if article.illustration %}
     <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ article.illustration }}'); background-position: center; ">
     {% else %}
-    <div class="header-container gradient">
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
     {% endif %}
 {% endblock headerstyle %}
 
@@ -48,6 +48,6 @@
         {% endif %}
 
         {% include "disqus_script.html" %}
-        
+
     </div>
 {% endblock %}
